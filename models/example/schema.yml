@@ -25,8 +25,20 @@ models:
   - name: top_selling_product_by_title
     description: "Shows top selling products"
     columns:
-      - name: id
-        description: "The primary key for this table"
+      - name: title
+        description: "The product title"
         tests:
           - unique
           - not_null
+      - name: created_at
+        description: "The date the product was purchase."
+      - name: total
+        description: "Total amount of the product."
+
+  - name: Sales_by_city
+    description: "Shows the sales by city in the year 2022"
+    columns:
+      - name: created_at
+        description: "The date the order was done."
+  
+
