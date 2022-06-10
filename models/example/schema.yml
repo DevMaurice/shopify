@@ -45,13 +45,13 @@ models:
     columns:
       - name: order_date
         description: "The date the discount was applied."
-      -name: D_code
+      - name: D_code
         description: "The actual discount code."
-      -name: D_Value
+      - name: D_Value
         description: "The discount amount for a given code."
-      -name: number_orders
+      - name: number_orders
         description: "Number of orders the discount code is applied on."
-      -name: total_discount
+      - name: total_discount
         description: "Total value of the discount code per given day."
   
 
