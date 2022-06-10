@@ -2,17 +2,28 @@
 version: 2
 
 models:
-  - name: my_first_dbt_model
-    description: "A starter dbt model"
+  - name: cleaned_order_line
+    description: "A cleaner order line table"
     columns:
       - name: id
         description: "The primary key for this table"
         tests:
           - unique
           - not_null
+      - name: order_id
+        description: "References the order table details"
+      - name: product_id
+        description: "References the products table details"
+      - name: price
+        description: "The Price of the product bought"
+      - name: quantity
+        description: "The quantity the customer bought"
+      - name: TOTAL_DISCOUNT
+        description: "Total discount customer given on the product."
 
-  - name: my_second_dbt_model
-    description: "A starter dbt model"
+
+  - name: top_selling_product_by_title
+    description: "Shows top selling products"
     columns:
       - name: id
         description: "The primary key for this table"
