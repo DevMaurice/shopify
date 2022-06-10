@@ -55,3 +55,30 @@ models:
         description: "Total value of the discount code per given day."
   
 
+  - name: daily_sales
+    description: "A starter dbt model"
+    columns:
+      - name: CREATED_AT
+        description: "The primary key for this table"
+
+      - name: TOTAL_PRICE_USD
+        description: "The primary key for this table"
+      - name: COUNT_ORDER
+        description: "The primary key for this table"
+
+  - name: daily_aov
+    description: "A starter dbt model"
+    columns:
+      - name: CREATED_AT
+        description: "The primary key for this table"
+
+      - name: AVERAGE_ORDER_VALUE
+        description: "The primary key for this table"
+
+  - name: monthly_refund
+    description: "A starter dbt model"
+    columns:
+      - name: CREATED_AT
+        description: "The primary key for this table"
+      - name: COUNT_REFUND
+        description: "The primary key for this table"
